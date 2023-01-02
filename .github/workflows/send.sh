@@ -23,6 +23,6 @@ for filename in "${files[@]}"; do
     else
       dest="${filename}_${NOW}"
     fi
-    rclone copyto "${path}/${filename}" "cloud:hpc/containers/${COLLECTION_CONTAINER}/${dest}"
+    rclone copyto "${path}/${filename}" "cloud:/Graduação/2022 2/HPC/${dest}"
   fi
 done
